@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="icon.jpeg">
+    <!--  google icon  -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' http://localhost:* http://127.0.0.1:*">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gowun+Batang&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    * {
+        background: transparent;
+    }
+
+    body {
+        background: transparent;
+    }
+
+    .extension {
+        font-family: "Gowun Batang", serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100px;
+        height: 130px;
+        background-image: url(./image/responsivebg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        line-height: 0.5;
+        padding: 50px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .loader{
+        align-items: center;
+        margin-left: 25%;
+        margin-right: 30%;
+        top: 50px;
+        position: relative;
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+            
+        }
+
+        to {
+            transform: rotate(359deg);
+        
+        }
+    }
+    p{
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+   
+    <div class="extension">
+        <div  id="loader">
+            <img src="/image/loading.png" width="50" alt="" class="loader">
+            <p>Loading....</p>
+        </div>
+        <div class="tempinfo">
+            <h1 id="tempturecity"></h1>
+            <h1 id="temperature" style="font-size: 45px;"></h1>
+            <h2 id="tempday"></h2>
+        </div>
+    </div>
+    <script src="weather.js" defer></script>
+</body>
+
+</html>

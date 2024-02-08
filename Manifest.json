@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Extension",
+  "version": "1.0",
+  "description": "A simple weather extension",
+  "permissions": [
+    "geolocation"
+  ],
+  "action": {
+    "default_icon":  "Image/icon.jpeg",
+    "default_popup": "weatherextension.html",
+    "default_title": "Weather Extension"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["Images/responsivebg.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
